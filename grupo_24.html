@@ -6,6 +6,98 @@
     <title>Trabajo Practico numero 1</title>
 </head>
 <body>
-    
+
+  <header>
+    <h1>Trabajo Práctico N°1 — Streaming de videojuegos</h1>
+    <p>Equipo 24 (ejemplo) — Juego seleccionado: <strong>Counter-Strike 2 (CS2)</strong></p>
+  </header>
+
+  <section>
+    <h2>Selección del juego</h2>
+    <p><strong>Juego:</strong> Counter-Strike 2 (CS2)</p>
+    <p> CS2 es un shooter táctico multijugador competitivo basado en el motor Source 2. Partidas rápidas por rondas, fuerte enfoque en puntería y trabajo en equipo, gran escena competitiva y comunidades activas en plataformas de streaming como Twitch y YouTube.</p>
+    <p><strong>Por qué lo elegimos:</strong> es uno de los títulos con mayor público en streaming para shooters tácticos; exige buena tasa de frames para rendimiento competitivo, lo que permite justificar decisiones técnicas y comparativas en el trabajo (ej.: priorizar GPU/CPU/latencia).</p>
+  </section>
+
+  <section>
+    <h2>2. Requerimientos del juego (resumen)</h2>
+    <p>Advertencia: siempre validar las cifras finales en la página oficial de CS2 (Steam) antes de entregar el trabajo; las especificaciones pueden cambiar con parches.</p>
+
+
+<h3>Requisitos mínimos (orientativos)</h3>
+<ul>
+  <li>Sistema operativo: Windows 10 64-bit</li>
+  <li>CPU: Procesador con al menos 4 núcleos (threads): Intel Core i5-750 o equivalente</li>
+  <li>RAM: 8 GB.</li>
+  <li>GPU: La tarjeta gráfica de ser de al menos 1 GB y debe ser compatible con DirectX 11 y Shader Model 5.0.</li>
+  <li>Almacenamiento: 85 GB de espacio disponible</li>
+</ul>
+
+<h3>Requisitos recomendados (orientativos)</h3>
+<ul>
+  <li>Sistema operativo: Windows 10/11 64-bit.</li>
+  <li>CPU: Intel Core i7-4790 / AMD Ryzen 5 1600</li>
+  <li>RAM: 16 GB</li>
+  <li>GPU: NVIDIA GeForce GTX 1060 / AMD Radeon RX 580</li>
+  <li>Se recomienda un disco de estado sólido (SSD) para tiempos de carga más rápidos y unos 85 GB de espacio</li>
+</ul>
+
+<p><em>Comentarios técnicos rápidos:</em> para hacer streaming en 720p/1080p mientras se mantiene 120+ FPS en CS2 competitivo, conviene priorizar una CPU con buen rendimiento por núcleo y una GPU decente; además, reservar parte de la RAM y CPU para el encoder (hardware NVENC en GPUs NVIDIA o encoder por CPU si la GPU no tiene buen encoder).</p>
+
+
+  </section>
+
+  <section>
+    <h2>3. Comparación con otro juego competitivo — Valorant</h2>
+    <p>Elegimos <strong>Valorant</strong> como juego comparativo porque es otro shooter táctico competitivo con gran presencia en streaming y con requerimientos técnicos distintos.</p>
+
+
+<table>
+  <tr>
+    <th>Aspecto</th>
+    <th>Counter-Strike 2 (CS2)</th>
+    <th>Valorant</th>
+  </tr>
+  <tr>
+    <td>Motor / efectos</td>
+    <td>Source 2: efectos más avanzados (iluminación, humo volumétrico). Puede ser más exigente gráficamente.</td>
+    <td>Motor optimizado para alto framerate en hardware modesto; menos efectos pesados por diseño.</td>
+  </tr>
+  <tr>
+    <td>Requisitos mínimos (prácticos)</td>
+    <td>Mayor o similar; requiere mínimo 8 GB RAM y GPU compatible DX11; en práctica, PCs modestos sufren más que en Valorant.</td>
+    <td>Menos exigente; muchos PCs modestos pueden alcanzar 60+ FPS con ajustes bajos.</td>
+  </tr>
+  <tr>
+    <td>Requerimientos para streamear a 720p/1080p</td>
+    <td>Recomendado: 16 GB RAM, GPU de gama media, CPU decente; usar encoder NVENC o similar para no sacrificar FPS.</td>
+    <td>Se puede streamear con hardware más modesto; parte del presupuesto puede destinarse a webcam/mic y red.</td>
+  </tr>
+  <tr>
+    <td>Tamaño de instalación</td>
+    <td>Más pesado (dependiendo de mapas/actualizaciones puede crecer). Mejor SSD.</td>
+    <td>Generalmente más liviano.</td>
+  </tr>
+  <tr>
+    <td>Conclusión práctica</td>
+    <td>CS2 exige más cuidado con GPU/CPU si se quiere mantener alta calidad de transmisión y FPS competitivo.</td>
+    <td>Valorant permite destinar menos presupuesto a GPU y más a conectividad o capture gear, siendo más flexible para setups económicos.</td>
+  </tr>
+</table>
+
+  </section>
+
+  <section>
+    <h2>Justificación breve</h2>
+    <ul>
+      <li><strong>CPU:</strong> CS2 es sensible al rendimiento por núcleo y a la capacidad de mantener altos FPS. Para streaming, preferimos CPUs con 6+ núcleos y buen IPC si el presupuesto lo permite.</li>
+      <li><strong>GPU:</strong> necesaria para mantener calidad gráfica y FPS. Además, si es NVIDIA, su encoder NVENC facilita transmitir sin cargar la CPU; si es AMD, verificar compatibilidad del encoder (AMF).</li>
+      <li><strong>RAM:</strong> 16 GB para el sistema + juego + OBS + navegador. 8 GB queda justo y complica el multitasking al streamear.</li>
+      <li><strong>Almacenamiento:</strong> SSD para sistema y juego; mejora tiempos de carga y estabilidad.</li>
+      <li><strong>Red:</strong> conexión por cable Ethernet con buena latencia; para prevención de cortes, incluir UPS que cubra minutos y permita seguir en línea o apagar ordenado.</li>
+    </ul>
+  </section>
+
+
 </body>
 </html>
